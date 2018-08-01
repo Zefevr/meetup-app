@@ -39,6 +39,14 @@ class Navbar extends Component {
               </Link>
             </Router>
           </li>
+          <li>
+            <Router>
+              <Link to ="/about">
+                <i className="fa fa-question"></i>
+                    About
+              </Link>
+            </Router>
+          </li>
         </ul>
       </div>
     )
