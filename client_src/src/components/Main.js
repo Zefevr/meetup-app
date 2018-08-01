@@ -5,12 +5,12 @@ import About from './About'
 
 const Main = () => (
 
-    <Router>
-        <div>
-            <Route exact path="/" component={Meetups}/>
-            <Route path="/about" component={About}/>
-        </div>
-    </Router>
+  <Router>
+    <div>
+      <Route exact path="/" component={Meetups}/>
+      <Route path="/about" component={About}/>
+    </div>
+  </Router>
 )
 
 export default Main
