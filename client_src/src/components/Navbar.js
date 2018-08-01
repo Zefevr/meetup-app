@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import { Link,  BrowserRouter as Router } from 'react-router-dom'
+//import { Link,  BrowserRouter as Router } from 'react-router-dom'
 
 class Navbar extends Component {
   render(){
@@ -11,12 +11,10 @@ class Navbar extends Component {
             <a data-target="main-menu" className="sidenav-trigger"><i className="fa fa-bars"></i></a>
             <ul className="right hide-on-small-only">
               <li>
-                <Router>
-                  <Link to ="/">
-                    <i className="fa fa-users"></i>
+                <a href ="/">
+                  <i className="fa fa-users"></i>
                     Meetups
-                  </Link>
-                </Router>
+                </a>
               </li>
             </ul>
           </div>
@@ -24,28 +22,22 @@ class Navbar extends Component {
 
         <ul className="sidenav" id="main-menu">
           <li>
-            <Router>
-              <Link to ="/">
-                <i className="fa fa-users"></i>
+            <a href="/">
+              <i className="fa fa-users"></i>
                     Meetups
-              </Link>
-            </Router>
+            </a>
           </li>
           <li>
-            <Router>
-              <Link to ="/meetups/add">
-                <i className="fa fa-plus"></i>
+            <a href="/meetups/add">
+              <i className="fa fa-plus"></i>
                     Add Meetup
-              </Link>
-            </Router>
+            </a>
           </li>
           <li>
-            <Router>
-              <Link to ="/about">
-                <i className="fa fa-question"></i>
+            <a href="/about">
+              <i className="fa fa-question"></i>
                     About
-              </Link>
-            </Router>
+            </a>
           </li>
         </ul>
       </div>

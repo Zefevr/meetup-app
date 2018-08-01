@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link,  BrowserRouter as Router } from 'react-router-dom'
+//import { Link,  BrowserRouter as Router } from 'react-router-dom'
 import axios from 'axios'
 
 class MeetupDetails extends Component {
@@ -27,12 +27,16 @@ class MeetupDetails extends Component {
 
   render(){
     return (
-      <Router>
-        <div>
-          <Link className="btn grey" to="/">Back</Link>
-          <h1>{this.state.details.name}</h1>
-        </div>
-      </Router>
+      <div>
+        <a className="btn grey" href="/">Back</a>
+        <h1>{this.state.details.name}</h1>
+        <ul className="collection">
+          <li className="collection-item">City: {this.state.details.city}</li>
+          <li className="collection-item">Address: {this.state.details.address}</li>
+        </ul>
+        <a className="btn" href={`/meetups/edit/${this.state.details.id}`}>Edit</a>
+      </div>
+      
     )
   }
     

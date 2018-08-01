@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link,  BrowserRouter as Router } from 'react-router-dom'
+//import { Link,  BrowserRouter as Router } from 'react-router-dom'
 
 class MeetupItem extends Component {
   constructor(props){
@@ -11,13 +11,11 @@ class MeetupItem extends Component {
 
   render(){
     return (
-      <Router>
-        
-        <li className="collection-item">
-          <Link to={`/meetups/${this.state.item.id}`}>{this.state.item.name}</Link>
-        </li>
-        
-      </Router>
+
+      <li className="collection-item">
+        <a href={`/meetups/${this.state.item.id}`}>{this.state.item.name}</a>
+      </li>
+
     )
   }
     
