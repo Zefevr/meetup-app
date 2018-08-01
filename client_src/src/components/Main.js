@@ -4,14 +4,13 @@ import Meetups from './Meetups'
 import About from './About'
 
 const Main = () => (
-    <main>
-        <Router>
-            <div>
-            <Route exact path='/' componet={Meetups} />
-            <Route exact path='/about' componet={About} />
-            </div>
-        </Router>   
-     </main>   
+
+    <Router>
+        <div>
+            <Route exact path="/" component={Meetups}/>
+            <Route path="/about" component={About}/>
+        </div>
+    </Router>
 )
 
 export default Main
