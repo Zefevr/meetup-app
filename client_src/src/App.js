@@ -12,7 +12,7 @@ const App = () => (
       <Main />
     </div>
     <div className="fixed-action-btn">
-      <a href="/meetups/add" className="btn-floating btn-large waves-effect waves-light red">
+      <a href="/meetup/add" className="btn-floating btn-large waves-effect waves-light red">
         <i className="fa fa-plus"></i>
       </a>
     </div>

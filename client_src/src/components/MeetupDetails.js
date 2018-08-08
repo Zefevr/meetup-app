@@ -28,6 +28,7 @@ class MeetupDetails extends Component {
   render(){
     return (
       <div>
+        <br />
         <a className="btn grey" href="/">Back</a>
         <h1>{this.state.details.name}</h1>
         <ul className="collection">
@@ -35,6 +36,8 @@ class MeetupDetails extends Component {
           <li className="collection-item">Address: {this.state.details.address}</li>
         </ul>
         <a className="btn" href={`/meetups/edit/${this.state.details.id}`}>Edit</a>
+        <button className="btn red right">Delete</button>
+      
       </div>
       
     )

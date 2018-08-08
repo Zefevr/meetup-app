@@ -28,7 +28,7 @@ class Navbar extends Component {
             </a>
           </li>
           <li>
-            <a href="/meetups/add">
+            <a href="/meetup/add">
               <i className="fa fa-plus"></i>
                     Add Meetup
             </a>
