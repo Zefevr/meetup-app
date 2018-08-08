@@ -33,12 +33,6 @@ class Navbar extends Component {
                     Add Meetup
             </a>
           </li>
-          <li>
-            <a href="/about">
-              <i className="fa fa-question"></i>
-                    About
-            </a>
-          </li>
         </ul>
       </div>
     )
