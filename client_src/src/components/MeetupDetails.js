@@ -25,6 +25,14 @@ class MeetupDetails extends Component {
       .catch(err => console.log(err))
   }
 
+  onDelete(){
+    let meetupId = this.state.details.id;
+    axios.delete(`http://localhost:3000/api/meetups/${meetupId}`)
+      .then(respones => {
+        this.props.history.push('/')
+      }).catch(err => console.log(err))
+  }
+
   render(){
     return (
       <div>
@@ -36,7 +44,7 @@ class MeetupDetails extends Component {
           <li className="collection-item">Address: {this.state.details.address}</li>
         </ul>
         <a className="btn" href={`/meetups/edit/${this.state.details.id}`}>Edit</a>
-        <button className="btn red right">Delete</button>
+        <button onClick={this.onDelete.bind(this)} className="btn red right">Delete</button>
       
       </div>
       
